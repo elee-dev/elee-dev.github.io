@@ -3,6 +3,11 @@ color: #274690;
 font-family: 'Ubuntu', sans-serif;
 }
 
+/*disables visited colors*/
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -39,6 +44,10 @@ ul.menuBar li{
   margin-top: 40px;
   border: 5px solid #1B264F;
   padding: 7px;
+}
+
+ul.menuBar li a{
+  text-decoration: none;
 }
 
 img.menuImage{
@@ -198,6 +207,7 @@ display: none;
 }
 
 .centreImage{
+  max-height: 600px;
 display: block;
 margin-left: auto;
 margin-right: auto;
@@ -207,3 +217,5 @@ margin-right: auto;
 padding-left: 15px;
 text-transform: initial;
 }
+
+/****************************/
