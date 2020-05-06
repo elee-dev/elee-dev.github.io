@@ -48,6 +48,7 @@ ul.navBar li{
 
 ul.navBar li a{
   text-decoration: none;
+  display: block;
 }
 
 img.navImage{
