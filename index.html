@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Eric Lee</title>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 <body>
-<div class="menuBarContainer">
-  <img class="menuImage" src="images/eleeLogoDark.png">
-  <ul class="menuBar">
-    <li class="menuLink"><a href="#portfolio">Portfolio</a></li>
-    <li class="menuLink"><a href="#cvitae">CV</a></li>
-    <li class="menuLink"><a href="#contact">Contact</a></li>
+<div class="navBarContainer">
+  <img class="navImage" src="images/eleeLogoDark.png" alt="elee Logo">
+  <ul class="navBar">
+    <li class="navLink"><a href="#portfolio">Portfolio</a></li>
+    <li class="navLink"><a href="#cvitae">CV</a></li>
+    <li class="navLink"><a href="#contact">Contact</a></li>
   </ul>
 </div>
+<section class="flexContainer">
 <!------------------------------------------------------------------>
 <section id="introPage" class="fullPage">
 <div class="splash">
-  <img class="profileImage" src="images/smallEric.png">
+  <img class="profileImage" src="images/smallEric.png" alt="Headshot of Eric Lee">
   <h1 class="titleTxt">Hello! My name is Eric.</h1>
   <p class="subHead">I am a tech coach, web developer, media developer, personal trainer, fitness enthusiast, lover of cocktails and amateur sous vide cook.</p>
 </div>
@@ -33,10 +35,10 @@
 <!------------------------------------------------------------------>
 <button onclick="revealDiv('1')" class="flexbox">
 <div class="shrink">
-<h3 style="text-transform: uppercase;">• Scarfe Sandbox Posters</h3>
+<h3>• Scarfe Sandbox Posters</h3>
 </div>
 <div class="reveal" id="1">
-<img class="centreImage" src="images/stitchesCMI.png" />
+<img class="centreImage" src="images/stitchesCMI.png" alt="A poster of the event, Create Make Innovate."/>
 <div class="description">These print posters were displayed around the UBC campus and were used as promotional flyers to hand out during any of the Scarfe Sandbox’s workshops and events.</div>
 </div>
 </button>
@@ -44,7 +46,7 @@
 <!------------------------------------------------------------------>
 <button onclick="revealDiv('2')" class="flexbox">
 <div class="shrink">
-<h3 style="text-transform: uppercase;">• Scarfe Digital Sandbox Website Redesign</h3>
+<h3>• Scarfe Digital Sandbox Website Redesign</h3>
 </div>
 <div class="reveal" id="2">
 <a href="http://scarfedigitalsandbox.teach.educ.ubc.ca" rel="noopener noreferrer" target="_blank"><img class="centreImage" src="images/scarfeSandboxWebsite.png" /></a>
@@ -57,7 +59,7 @@ In May 2018, I took over the Scarfe Digital Sandbox as the principal web develop
 <!------------------------------------------------------------------>
 <button onclick="revealDiv('3')" class="flexbox">
 <div class="shrink">
-<h3 style="text-transform: uppercase;">• Scarfe Sandbox Logo and Branding</h3>
+<h3>• Scarfe Sandbox Logo and Branding</h3>
 </div>
 <div class="reveal" id="3">
   <video class="centreImage" autoplay muted loop width="700vw">
@@ -71,7 +73,7 @@ In May 2018, I took over the Scarfe Digital Sandbox as the principal web develop
 <!------------------------------------------------------------------>
 <button onclick="revealDiv('4')" class="flexbox">
 <div class="shrink">
-<h3 style="text-transform: uppercase;">• Scarfe Sandbox Digital Signage</h3>
+<h3>• Scarfe Sandbox Digital Signage</h3>
 </div>
 <div class="reveal" id="4">
 <video class="centreImage" autoplay muted loop width="700vw">
@@ -85,7 +87,7 @@ In May 2018, I took over the Scarfe Digital Sandbox as the principal web develop
 <!------------------------------------------------------------------>
 <button onclick="revealDiv('5')" class="flexbox">
 <div class="shrink">
-<h3 style="text-transform: uppercase;">• TEC EXPO 2018 Digital Signage</h3>
+<h3>• TEC EXPO 2018 Digital Signage</h3>
 </div>
 <div class="reveal" id="5">
 <video class="centreImage" autoplay muted loop width="700vw">
@@ -95,18 +97,49 @@ In May 2018, I took over the Scarfe Digital Sandbox as the principal web develop
 <div class="description">I began making digital signage ads during my co-op work term with Educational Technology Support, here is a digital signage ad for one of the office's biggest annual events, TEC (Technology Enhanced Classroom) Expo 2018. TEC Expo hosts a panel of educators who have used technology innovatively or creatively in their classrooms. This particular ad was a call for educators who wished to present at the event. Fun fact: I was also the emcee of this event!</div>
 </div>
 </button>
+<!------------------------------------------------------------------>
+<!------------------------------------------------------------------>
+<button onclick="revealDiv('6')" class="flexbox">
+<div class="shrink">
+<h3>• Downtown New West BIA Explainer Video</h3>
+</div>
+<div class="reveal" id="6">
+<video class="centreImage" autoplay muted loop width="700vw">
+  <source src="images/muralNewWest.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<div class="description">This video was made to showcase an AR mural project on Columbia Street in Downtown New West. The mural showed a video when viewed within Snapchat and this video provided instructions on how to get the video to appear.</div>
+</div>
+</button>
+<!------------------------------------------------------------------>
+<!------------------------------------------------------------------>
+<button onclick="revealDiv('7')" class="flexbox">
+<div class="shrink">
+<h3>• Downtown New West BIA Call for Volunteers Ad</h3>
+</div>
+<div class="reveal" id="7">7
+<video class="centreImage" autoplay muted loop width="700vw">
+  <source src="images/cartVolunteer.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<div class="description">Taking the lead on managing the volunteers for Fridays on Front, I made this video for marketing on the Downtown New West social media channels.</div>
+</div>
+</button>
+<!------------------------------------------------------------------>
+<!------------------------------------------------------------------>
 </section>
 <section id="cvitae" class="fullPage">
   <h2 class="sectionHeader">Curriculum Vitae</h2>
   <!------------------------------------------------------------------>
   <!------------------------------------------------------------------>
-  <a href="files/050420Resume.pdf" target="_blank" rel="noreferrer">Download</a>
+  <div class="shrink"><h3><a class="flexbox" href="files/CV050620.pdf" target="_blank" rel="noreferrer">Download</a></h3></div>
   <!------------------------------------------------------------------>
   <!------------------------------------------------------------------>
 </section>
 <section id="contact" class="fullPage">
   <h2 class="sectionHeader">Contact Me</h2>
   <img src="images/ericEmail.png">
+</section>
 </section>
 <script>
   function revealDiv(toggle) {
@@ -117,7 +150,6 @@ In May 2018, I took over the Scarfe Digital Sandbox as the principal web develop
       x.style.display = "block";
     }
   }
-  <
 </script>
 </body>
 </html>

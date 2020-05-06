@@ -16,7 +16,7 @@ body{
   background-color: #F5F3F5;
 }
 
-.menuBar{
+.navBar{
   list-style: none;
   display: flex;
   text-align: center;
@@ -25,14 +25,14 @@ body{
   justify-content: space-between;
 }
 
-div.menuBarContainer{
+div.navBarContainer{
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
 }
 
-ul.menuBar li{
+ul.navBar li{
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   display: inline;
@@ -46,11 +46,11 @@ ul.menuBar li{
   padding: 7px;
 }
 
-ul.menuBar li a{
+ul.navBar li a{
   text-decoration: none;
 }
 
-img.menuImage{
+img.navImage{
   margin-top: 5px;
   width: 125px;
   float: left;
@@ -69,14 +69,14 @@ img.menuImage{
 }
 
 .splash{
-  width: 60%;
-  margin-top: 150px;
+  /*width: 60%;*/
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .titleTxt{
-  font-size: 70px;
+  font-size: 100px;
   padding-top: 50px;
 }
 
@@ -85,13 +85,13 @@ img.menuImage{
 }
 
 .subHead{
-  font-size: 28px;
+  font-size: 50px;
   font-weight: 300;
 }
 
 .scroller{
   font-size: 28px;
-  margin-top: 300px;
+  margin-top: 150px;
   text-align: center;;
 }
 
@@ -104,12 +104,13 @@ img.menuImage{
 
 /*Flexbox*/
 .flexContainer{
+  margin-top: 35px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-content: flex-start;
   transition: all .2s ease-in-out;
-    -webkit-animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
 
@@ -128,7 +129,6 @@ img.menuImage{
   margin-bottom: 1em;
   overflow-y: auto;
   overflow: hidden;
-    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
@@ -149,15 +149,10 @@ border-color: #3F7ED5;
 .reveal {
 display: none;
   transition: all .2s ease-in-out;
-    -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
-.reveal{
     animation: fadein 1s;
     -moz-animation: fadein 1s; /* Firefox */
     -webkit-animation: fadein 1s; /* Safari and Chrome */
     -o-animation: fadein 1s; /* Opera */
-  opacity: 0;
   -webkit-animation-fill-mode: forwards;
 }
 @keyframes fadein {
@@ -192,14 +187,18 @@ display: none;
         opacity: 1;
     }
 }
-
-.flexbox:focus .reveal{
+/*
+.flexbox:hover .reveal{
   display: block;
-}
+} */
 
 /*Shrink name and title on hover*/
 .shrink{
     transition: all .2s ease-in-out;
+}
+
+.shrink h3{
+  text-transform: uppercase;
 }
 
 .flexbox:hover .shrink, .flexbox:focus .shrink{
